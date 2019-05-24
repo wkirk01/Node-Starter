@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "update": "ncu -u && npm install"
+  },
   "dependencies": {
-    "@types/node": "^12.0.2"
+    "@types/node": "12.0.2"
   }
 }

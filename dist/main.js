@@ -7,7 +7,6 @@ const os_1 = __importDefault(require("os"));
 const systemInfo = {
     architecture: os_1.default.arch(),
     platform: os_1.default.platform(),
-    release: os_1.default.release(),
 };
 console.log(systemInfo);
 //# sourceMappingURL=main.js.map
