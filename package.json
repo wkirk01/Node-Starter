@@ -7,9 +7,7 @@
     "update": "ncu -u && npm install"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.138",
-    "@types/node": "12.7.4",
-    "axios": "^0.19.0",
-    "lodash": "^4.17.15"
+    "@types/node": "12.7.5",
+    "axios": "^0.19.0"
   }
 }

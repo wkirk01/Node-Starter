@@ -1,11 +1,8 @@
-import { filter } from "lodash"
 import axios from "axios"
 
-axios.get("https://jsonplaceholder.typicode.com/posts")
-    .then(function (response) {
-        let filteredResults = filter(response.data, { userId: 1 })
-        console.log(filteredResults)
-    })
-    .catch(function (error) {
-        console.log(error);
-    })
+async function getData() {
+    const { data } = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+    console.log(data)
+}
+
+getData()
