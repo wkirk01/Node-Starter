@@ -1,5 +1,5 @@
-export function get(url: string) {
-    return new Promise((resolve, reject) => {
+export function get<T>(url: string) {
+    return new Promise<T>((resolve, reject) => {
         fetch(url)
             .then(response => response.json())
             .then(json => resolve(json))
