@@ -4,12 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "update": "ncu -u && npm install"
+    "update": "ncu -u && yarn",
+    "install": "yarn"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.136",
     "@types/node": "12.7.1",
-    "axios": "^0.19.0",
-    "lodash": "^4.17.15"
+    "axios": "^0.19.0"
   }
 }
