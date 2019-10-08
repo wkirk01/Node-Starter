@@ -1,9 +1,20 @@
-import axios from "axios"
+import Axios from "axios"
 
-axios.get("https://jsonplaceholder.typicode.com/posts")
-    .then(function (response) {
-        console.log(response.data)
-    })
-    .catch(function (error) {
-        console.log(error);
-    })
+export function get<T>(url: string) {
+    return new Promise<T>((resolve, reject) => {
+        Axios.get<T>(url)
+            .then(response => resolve(response.data))
+            .catch(error => reject(error))
+    });
+}
+
+(async () => {
+    try {
+        const todo = await get("https://jsonplaceholder.typicode.com/todos/1")
+        console.log(todo)
+    } catch (error) {
+        console.error(error)
+    }
+})();
+
+

@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "update": "ncu -u && yarn",
-    "install": "yarn"
+    "run": "ts-node src/main.ts",
+    "install-dependencies": "yarn",
+    "update": "ncu -u && yarn"
   },
   "dependencies": {
-    "@types/node": "12.7.1",
+    "@types/node": "12.7.11",
     "axios": "^0.19.0"
   }
 }
