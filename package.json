@@ -9,7 +9,7 @@
     "update": "ncu -u && yarn"
   },
   "dependencies": {
-    "@types/node": "12.7.11",
-    "axios": "^0.19.0"
+    "@types/node": "13.1.8",
+    "axios": "^0.19.1"
   }
 }
